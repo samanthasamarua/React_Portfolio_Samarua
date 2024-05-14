@@ -1,6 +1,6 @@
 import React from 'react';
-import { Box, Flex, Heading, IconButton, Text } from '@chakra-ui/react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { Box, Flex, Heading, Text, Link } from '@chakra-ui/react';
+import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -8,27 +8,45 @@ const Footer = () => {
       <Flex direction="column" align="center" maxW="960px" mx="auto">
         <Heading as="h2" size="lg" mb={4}>Samantha Samarua</Heading>
         <Flex>
-          <IconButton
-            as="a"
+          <Link
             href="https://github.com/developer"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            icon={<FaGithub />}
-            color="white"
-            variant="ghost"
+            fontSize="24px" // Adjusted icon size
             mr={4}
-          />
-          <IconButton
-            as="a"
+          >
+            <FaGithub />
+          </Link>
+          <Link
             href="https://linkedin.com/in/developer"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            icon={<FaLinkedin />}
-            color="white"
-            variant="ghost"
-          />
+            fontSize="24px" // Adjusted icon size
+            mr={4}
+          >
+            <FaLinkedin />
+          </Link>
+          <Link
+            href="https://instagram.com/developer"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            fontSize="24px" // Adjusted icon size
+            mr={4}
+          >
+            <FaInstagram />
+          </Link>
+          <Link
+            href="https://facebook.com/developer"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            fontSize="24px" // Adjusted icon size
+          >
+            <FaFacebook />
+          </Link>
         </Flex>
         <Flex justify="center" mt={4}>
           <Text>© 2024</Text>
