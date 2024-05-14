@@ -6,7 +6,7 @@ const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <div className="navbar-container" style={{ backgroundColor: '#2C4251' }}> {/* Added inline style for background color */}
+    <div className="navbar-container" style={{ backgroundColor: '#3A3840' }}> {/* Added inline style for background color */}
       <Flex justify="space-between" alignItems="center" py={4}> {/* Added padding on Y-axis for spacing */}
         {/* Name on the left */}
         <Heading size="md" fontWeight="semibold" color="white" style={{ fontSize: '50px' }}> {/* Increased font size */}
