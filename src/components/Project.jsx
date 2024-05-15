@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Image, Heading, Flex, Link } from '@chakra-ui/react';
 
+
 const Project = ({ title, imageSrc, appLink, repoLink }) => {
   return (
     <Box borderWidth="5px" borderRadius="lg" overflow="hidden" p={4} boxShadow="md" >

@@ -5,7 +5,7 @@ const Resume = () => {
   return (
     <Box bg="#F3F4F6" p={4}>
       <Box textAlign="center" mb={8} bg="#F3F4F6">
-        <Heading as="h1" size="xl" mb={4}>Resume</Heading>
+      <Heading as="h2" fontSize="50px" fontFamily="Agbalumo" fontWeight="bold" mb={4}>Resume</Heading>
         <Text fontSize="lg">Explore my skills and experience.</Text>
       </Box>
       

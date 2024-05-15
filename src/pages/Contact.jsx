@@ -31,7 +31,7 @@ const Contact = () => {
   return (
     <VStack spacing={8} align="center" bg="#F3F4F6" p={8}>
       <Box bg="#F3F4F6" p={20} borderRadius="lg" boxShadow="lg" maxW="xl" > {/* Adjusted max width */}
-        <Heading size="lg" mb={6}>Contact Me</Heading>
+      <Heading as="h2" fontSize="50px" fontFamily="Agbalumo" fontWeight="bold" mb={4}>Contact Me</Heading>
         <form onSubmit={handleSubmit}>
           <FormControl id="name" isRequired>
             <FormLabel>Name</FormLabel>

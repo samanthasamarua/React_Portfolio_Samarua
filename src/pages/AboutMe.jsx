@@ -8,7 +8,7 @@ const AboutMe = () => {
         <img src="./assets/Samantha.png" alt="Profile" style={{ width: '100%', borderRadius: '50%' }} />
       </Box>
       <Box maxW="60%" pl={8} >
-        <Heading as="h2" fontSize="50px" fontFamily="Agbalumo" fontWeight="bold" mb={4}>ABOUT ME</Heading> {/* Added margin bottom */}
+        <Heading as="h2" fontSize="50px" fontFamily="Agbalumo" fontWeight="bold" mb={4}>ABOUT ME</Heading> 
         <Text fontFamily="serif" fontSize="25px">
         As a full-stack developer with a unique background in geology, I bring a diverse set of skills and perspectives to the world of software development. My journey in geology has honed my analytical abilities, problem-solving mindset, and keen attention to detail. Moreover, my experience has underscored the importance of effective communication, a skill I continue to refine in my current role.
         <b/>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex } from '@chakra-ui/react';
+import { Flex, Box, Heading } from '@chakra-ui/react';
 import Project from '../components/Project'; // Assuming you have a Project component
 
 const Portfolio = () => {
@@ -45,18 +45,32 @@ const Portfolio = () => {
   ];
 
   return (
-    <Flex justify="center" align="center" flexWrap="wrap" py={8} bg="#F3F4F6">
-      {projects.map((project, index) => (
-        <Project
-          key={index}
-          title={project.title}
-          imageSrc={project.imageSrc}
-          appLink={project.appLink}
-          repoLink={project.repoLink}
-        />
-      ))}
+    <Flex direction="column" align="center" py={8} bg="#F3F4F6">
+      <Heading as="h2" fontSize="50px" fontFamily="Agbalumo" fontWeight="bold" mb={4}>Portfolio</Heading>
+      <Flex justify="center" align="center" flexWrap="wrap">
+        {projects.map((project, index) => (
+          <Box
+            key={index}
+            p={4}
+            m={4}
+            borderWidth="1px"
+            borderRadius="lg"
+            overflow="hidden"
+            boxShadow="md"
+            _hover={{ bg: 'lightBlue' }} // Change background color on hover
+          >
+            <Project
+              title={project.title}
+              imageSrc={project.imageSrc}
+              appLink={project.appLink}
+              repoLink={project.repoLink}
+            />
+          </Box>
+        ))}
+      </Flex>
     </Flex>
   );
 }
+
 
 export default Portfolio;
