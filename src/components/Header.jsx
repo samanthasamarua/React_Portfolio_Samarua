@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link as RouterLink } from 'react-router-dom'; // Import Link component from react-router-dom
+import { Link as RouterLink } from 'react-router-dom'; 
 import { Link, List, ListItem, Flex, Heading, IconButton, useDisclosure, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerBody, useBreakpointValue } from '@chakra-ui/react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
@@ -17,7 +17,7 @@ const Header = () => {
         
         {/* Navigation links on the right */}
         <Flex alignItems="center">
-          <List display="flex" alignItems="center">
+          <List display={{ base: 'none', md: 'flex' }} alignItems="center"> {/* Hide list on small screens */}
             <ListItem marginRight="8">
               <Link
                 as={RouterLink} // Use RouterLink as the rendered component
@@ -71,34 +71,50 @@ const Header = () => {
               </Link>
             </ListItem>
           </List>
-        </Flex>
 
-        {/* Hamburger menu icon for mobile */}
-        <IconButton 
-          icon={<GiHamburgerMenu />} 
-          variant="ghost" 
-          colorScheme="cyan"
-          aria-label="Menu"
-          onClick={onOpen}
-          display={{ base: 'block', md: 'none' }}
-        />
+          {/* Hamburger menu icon for mobile */}
+          <IconButton 
+            icon={<GiHamburgerMenu size="1.5em" />} // Adjust size here
+            variant="ghost" 
+            color="white" // Set the color to white
+            aria-label="Menu"
+            onClick={onOpen}
+            display={{ base: 'block', md: 'none' }} // Show on small screens
+          />
+        </Flex>
       </Flex>
 
       {/* Drawer for mobile navigation */}
-      <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
-        <DrawerOverlay />
-        <DrawerContent>
-          <DrawerCloseButton />
-          <DrawerBody>
-            <List styleType="none">
-              <ListItem><a href="#about">About</a></ListItem>
-              <ListItem><a href="#portfolio">Portfolio</a></ListItem>
-              <ListItem><a href="#contact">Contact</a></ListItem>
-              <ListItem><a href="#resume">Resume</a></ListItem>
-            </List>
-          </DrawerBody>
+      <Drawer isOpen={isOpen} placement="dropdown" onClose={onClose}><DrawerOverlay />
+        <DrawerContent bg="#F3F4F6">
+            <DrawerCloseButton />
+                <DrawerBody>
+                    <List styleType="none">
+                        <ListItem>
+                        <Link as={RouterLink} to="/AboutMe" fontSize="50px">
+                            About Me
+                        </Link>
+                        </ListItem>
+                        <ListItem>
+                        <Link as={RouterLink} to="/portfolio" fontSize="50px">
+                            Portfolio
+                        </Link>
+                        </ListItem>
+                        <ListItem>
+                        <Link as={RouterLink} to="/contact" fontSize="50px">
+                            Contact
+                        </Link>
+                        </ListItem>
+                        <ListItem>
+                        <Link as={RouterLink} to="/resume" fontSize="50px">
+                            Resume
+                        </Link>
+                        </ListItem>
+                    </List>
+                </DrawerBody>
         </DrawerContent>
-      </Drawer>
+    </Drawer>
+
     </div>
   );
 }
