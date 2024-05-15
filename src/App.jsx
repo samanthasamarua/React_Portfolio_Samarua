@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import BrowserRouter, Routes, and Route
 import AboutMe from './pages/AboutMe';
-import Contact from './pages/Contact'; // Import Contact component if it exists
-// import Resume from './pages/Resume'; // Import Resume component if it exists
+import Contact from './pages/Contact'; 
+// import Resume from './pages/Resume'; 
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Home from './components/Home';
+import Portfolio from './pages/Portfolio';
+
 
 
 function App() {
@@ -12,11 +13,12 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<AboutMe />} />
         <Route path='/AboutMe' element={<AboutMe />} />
-        <Route path='/Contact' element={<Contact />} /> 
+        <Route path='/Contact' element={<Contact />} />
+        <Route path='/Portfolio' element={<Portfolio/>} /> 
       </Routes>
-      <Footer /> {/* Render Footer component outside of Routes */}
+      <Footer /> 
     </Router>
   );
 }

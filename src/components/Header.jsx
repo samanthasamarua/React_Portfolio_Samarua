@@ -11,8 +11,8 @@ const Header = () => {
     <div className="navbar-container" style={{ backgroundColor: '#3A3840' }}>
       <Flex justify="space-between" alignItems="center" py={4}>
         {/* Name on the left */}
-        <Heading size="md" marginRight="8" fontWeight="semibold" color="white" fontSize={['1.5rem', null, '2rem']}>
-            <Link to="/Home" style={{ textDecoration: 'none', color: 'inherit' }}>Home</Link>
+        <Heading size="md" marginLeft="8" fontWeight="semibold" fontFamily="'Agbalumo'" color="white" fontSize={['25px', null, '3rem']}>
+          Samantha Samarua
         </Heading>
         
         {/* Navigation links on the right */}

@@ -5,16 +5,15 @@ import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 const Footer = () => {
   return (
     <Box as="footer" bg="#3A3840" color="white" py={4}>
-      <Flex direction="column" align="center" maxW="960px" mx="auto">
-        <Heading as="h2" size="lg" mb={4}>Samantha Samarua</Heading>
+      <Flex direction="column" align="center" maxW="1000px" mx="auto">
         <Flex>
           <Link
             href="https://github.com/developer"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            fontSize="24px" // Adjusted icon size
-            mr={4}
+            fontSize="80px" // Increased icon size
+            mr={15}
           >
             <FaGithub />
           </Link>
@@ -23,8 +22,8 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            fontSize="24px" // Adjusted icon size
-            mr={4}
+            fontSize="80px" // Increased icon size
+            mr={15}
           >
             <FaLinkedin />
           </Link>
@@ -33,8 +32,8 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            fontSize="24px" // Adjusted icon size
-            mr={4}
+            fontSize="80px" // Increased icon size
+            mr={15}
           >
             <FaInstagram />
           </Link>
@@ -43,13 +42,13 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
-            fontSize="24px" // Adjusted icon size
+            fontSize="80px" // Increased icon size
           >
             <FaFacebook />
           </Link>
         </Flex>
         <Flex justify="center" mt={4}>
-          <Text>© 2024</Text>
+          <Text>© Samantha Samarua 2024</Text>
         </Flex>
       </Flex>
     </Box>
