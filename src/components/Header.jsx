@@ -11,13 +11,13 @@ const Header = () => {
     <div className="navbar-container" style={{ backgroundColor: '#3A3840' }}>
       <Flex justify="space-between" alignItems="center" py={4}>
         {/* Name on the left */}
-        <Heading size="md" marginLeft="8" fontWeight="semibold" fontFamily="Agbalumo" color="white" fontSize={['25px', null, '3rem']}>
+        <Heading size="lg" marginLeft="8" fontWeight="semibold" fontFamily="Agbalumo" color="white" fontSize={['25px', null, '3rem']}>
           Samantha Samarua
         </Heading>
         
         {/* Navigation links on the right */}
         <Flex alignItems="center">
-          <List display={{ base: 'none', md: 'flex' }} alignItems="center"> {/* Hide list on small screens */}
+          <List display={{ base: 'none', md: 'flex' }} alignItems="center">
             <ListItem marginRight="8">
               <Link
                 as={RouterLink} // Use RouterLink as the rendered component

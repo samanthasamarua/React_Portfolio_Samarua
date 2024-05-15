@@ -1,6 +1,6 @@
 import React from 'react';
-import { Box, Flex, Heading, Text, Link } from '@chakra-ui/react';
-import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { Box, Flex,Text, Link } from '@chakra-ui/react';
+import { FaGithub, FaLinkedin} from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
       <Flex direction="column" align="center" maxW="1000px" mx="auto">
         <Flex>
           <Link
-            href="https://github.com/developer"
+            href="https://github.com/samanthasamarua"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -18,7 +18,7 @@ const Footer = () => {
             <FaGithub />
           </Link>
           <Link
-            href="https://linkedin.com/in/developer"
+            href="https://www.linkedin.com/in/samantha-samarua-b84019b2/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -26,25 +26,6 @@ const Footer = () => {
             mr={15}
           >
             <FaLinkedin />
-          </Link>
-          <Link
-            href="https://instagram.com/developer"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-            fontSize="80px" // Increased icon size
-            mr={15}
-          >
-            <FaInstagram />
-          </Link>
-          <Link
-            href="https://facebook.com/developer"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-            fontSize="80px" // Increased icon size
-          >
-            <FaFacebook />
           </Link>
         </Flex>
         <Flex justify="center" mt={4}>
