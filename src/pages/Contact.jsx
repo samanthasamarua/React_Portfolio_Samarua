@@ -30,7 +30,7 @@ const Contact = () => {
 
   return (
     <VStack spacing={8} align="center" bg="#F3F4F6" p={8}>
-      <Box bg="white" p={20} borderRadius="lg" boxShadow="lg" maxW="xl"> {/* Adjusted max width */}
+      <Box bg="#F3F4F6" p={20} borderRadius="lg" boxShadow="lg" maxW="xl" > {/* Adjusted max width */}
         <Heading size="lg" mb={6}>Contact Me</Heading>
         <form onSubmit={handleSubmit}>
           <FormControl id="name" isRequired>
@@ -42,7 +42,7 @@ const Contact = () => {
               onChange={handleChange} 
               placeholder="Enter your name" 
             />
-          </FormControl>
+          </FormControl >
           <FormControl id="email" isRequired mt={4}>
             <FormLabel>Email</FormLabel>
             <Input 

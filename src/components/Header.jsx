@@ -11,7 +11,7 @@ const Header = () => {
     <div className="navbar-container" style={{ backgroundColor: '#3A3840' }}>
       <Flex justify="space-between" alignItems="center" py={4}>
         {/* Name on the left */}
-        <Heading size="md" marginLeft="8" fontWeight="semibold" fontFamily="'Agbalumo'" color="white" fontSize={['25px', null, '3rem']}>
+        <Heading size="md" marginLeft="8" fontWeight="semibold" fontFamily="Agbalumo" color="white" fontSize={['25px', null, '3rem']}>
           Samantha Samarua
         </Heading>
         

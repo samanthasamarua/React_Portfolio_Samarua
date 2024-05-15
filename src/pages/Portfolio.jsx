@@ -45,7 +45,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <Flex justify="center" align="center" flexWrap="wrap" py={8}>
+    <Flex justify="center" align="center" flexWrap="wrap" py={8} bg="#F3F4F6">
       {projects.map((project, index) => (
         <Project
           key={index}
