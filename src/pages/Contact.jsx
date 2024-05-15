@@ -1,25 +1,73 @@
-import React from 'react';
-import { Box, Flex, Heading, Text } from '@chakra-ui/react';
+import React, { useState } from 'react';
+import { Heading, FormControl, FormLabel, Input, Textarea, Button, VStack, Box } from '@chakra-ui/react';
 
-const AboutMe = () => {
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you can add the logic to submit the form data
+    console.log(formData);
+    // Reset the form fields after submission
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
+  };
+
   return (
-    <Flex className="about-section" align="center" justify="center" bg="#F3F4F6" py={8} px={4} borderRadius="lg">
-      <Box maxW="40%">
-        <img src="./assets/Samantha.jpg" alt="Profile" style={{ width: '100%', borderRadius: '50%' }} />
+    <VStack spacing={8} align="center" bg="#F3F4F6" p={8}>
+      <Box bg="white" p={20} borderRadius="lg" boxShadow="lg" maxW="xl"> {/* Adjusted max width */}
+        <Heading size="lg" mb={6}>Contact Me</Heading>
+        <form onSubmit={handleSubmit}>
+          <FormControl id="name" isRequired>
+            <FormLabel>Name</FormLabel>
+            <Input 
+              type="text" 
+              name="name" 
+              value={formData.name} 
+              onChange={handleChange} 
+              placeholder="Enter your name" 
+            />
+          </FormControl>
+          <FormControl id="email" isRequired mt={4}>
+            <FormLabel>Email</FormLabel>
+            <Input 
+              type="email" 
+              name="email" 
+              value={formData.email} 
+              onChange={handleChange} 
+              placeholder="Enter your email address" 
+            />
+          </FormControl>
+          <FormControl id="message" isRequired mt={4}>
+            <FormLabel>Message</FormLabel>
+            <Textarea 
+              name="message" 
+              value={formData.message} 
+              onChange={handleChange} 
+              rows="4" 
+              placeholder="Enter your message" 
+            />
+          </FormControl>
+          <Button type="submit" colorScheme="teal" mt={6}>Submit</Button>
+        </form>
       </Box>
-      <Box maxW="60%" pl={8}> {/* Added left padding */}
-        <Heading as="h2" size="lg" fontFamily="sans-serif" fontWeight="bold" mb={4}>About Me</Heading> {/* Added margin bottom */}
-        <Text fontFamily="serif"> {/* Added text content */}
-          I am a passionate and dedicated individual with a strong interest in web development.
-          With several years of experience in front-end development, I have expertise in HTML, CSS, and JavaScript.
-        </Text>
-        <Text fontFamily="serif" mt={4}> {/* Added margin top */}
-          My career achievements include creating user-friendly and responsive web applications
-          that enhance user experience and achieve business goals.
-        </Text>
-      </Box>
-    </Flex>
+    </VStack>
   );
 }
 
-export default AboutMe;
+export default Contact;

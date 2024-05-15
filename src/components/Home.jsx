@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Flex, Heading, Text, Button, Avatar, useBreakpointValue } from '@chakra-ui/react';
 
-const Hero = () => {
+const Home = () => {
   const textWidth = useBreakpointValue({ base: "100%", sm: "30%" }); // Adjust text width based on breakpoint
   const imageWidth = useBreakpointValue({ base: "100%", sm: "40%" }); // Adjust image width based on breakpoint
 
@@ -24,4 +24,4 @@ const Hero = () => {
   );
 }
 
-export default Hero;
+export default Home;

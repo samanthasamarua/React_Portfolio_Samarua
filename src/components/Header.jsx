@@ -12,7 +12,7 @@ const Header = () => {
       <Flex justify="space-between" alignItems="center" py={4}>
         {/* Name on the left */}
         <Heading size="md" marginRight="8" fontWeight="semibold" color="white" fontSize={['1.5rem', null, '2rem']}>
-          Samantha Samarua
+            <Link to="/Home" style={{ textDecoration: 'none', color: 'inherit' }}>Home</Link>
         </Heading>
         
         {/* Navigation links on the right */}
