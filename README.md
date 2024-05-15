@@ -36,16 +36,16 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 # Screenshot
 
 # About Me Page
-<img src="./assets/AboutMe.png">
+<img src="./src/assets/AboutMe.png>
 
 # Contact Me Page
-<img src="./assets/ContactMe.png">
+<img src="./src/assets/ContactMe.png">
 
 # Portfolio Page
-<img src="./assets/Portfolio.png">
+<img src="./src/assets/Portfolio.png">
 
 # Resume Page
-<img src="./assets/Resume.png">
+<img src="./src/assets/Resume.png">
 
 # Deployment Link
 
