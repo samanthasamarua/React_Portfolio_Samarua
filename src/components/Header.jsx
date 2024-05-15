@@ -1,5 +1,6 @@
 import React from 'react';
-import { List, ListItem, Flex, Heading, IconButton, useDisclosure, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerBody, useBreakpointValue } from '@chakra-ui/react';
+import { Link as RouterLink } from 'react-router-dom'; // Import Link component from react-router-dom
+import { Link, List, ListItem, Flex, Heading, IconButton, useDisclosure, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerBody, useBreakpointValue } from '@chakra-ui/react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Header = () => {
@@ -10,32 +11,64 @@ const Header = () => {
     <div className="navbar-container" style={{ backgroundColor: '#3A3840' }}>
       <Flex justify="space-between" alignItems="center" py={4}>
         {/* Name on the left */}
-        <Heading size="md" fontWeight="semibold" color="white" fontSize={['1.5rem', null, '2rem']}> {/* Responsive font size */}
+        <Heading size="md" marginRight="8" fontWeight="semibold" color="white" fontSize={['1.5rem', null, '2rem']}>
           Samantha Samarua
         </Heading>
         
         {/* Navigation links on the right */}
         <Flex alignItems="center">
           <List display="flex" alignItems="center">
-            <ListItem marginRight="4">
-              <a href="#about" style={{ color: 'white', fontSize }}> {/* Dynamic font size */}
-                About
-              </a>
+            <ListItem marginRight="8">
+              <Link
+                as={RouterLink} // Use RouterLink as the rendered component
+                to="/AboutMe" // Specify the route path
+                _hover={{ color: 'teal.300' }}
+                _activeLink={{ color: 'white' }}
+                fontWeight='bold'
+                fontSize='lg'
+                style={{ color: 'white', fontSize }} // Apply styles
+              >
+                About Me
+              </Link>
             </ListItem>
-            <ListItem marginRight="4">
-              <a href="#portfolio" style={{ color: 'white', fontSize }}> {/* Dynamic font size */}
+            <ListItem marginRight="8">
+              <Link
+                as={RouterLink}
+                to="/portfolio"
+                _hover={{ color: 'teal.300' }}
+                _activeLink={{ color: 'white' }}
+                fontWeight='bold'
+                fontSize='lg'
+                style={{ color: 'white', fontSize }}
+              >
                 Portfolio
-              </a>
+              </Link>
             </ListItem>
-            <ListItem marginRight="4">
-              <a href="#contact" style={{ color: 'white', fontSize }}> {/* Dynamic font size */}
+            <ListItem marginRight="8">
+              <Link
+                as={RouterLink}
+                to="/contact"
+                _hover={{ color: 'teal.300' }}
+                _activeLink={{ color: 'white' }}
+                fontWeight='bold'
+                fontSize='lg'
+                style={{ color: 'white', fontSize }}
+              >
                 Contact
-              </a>
+              </Link>
             </ListItem>
-            <ListItem>
-              <a href="#resume" style={{ color: 'white', fontSize }}> {/* Dynamic font size */}
+            <ListItem marginRight="8">
+              <Link
+                as={RouterLink}
+                to="/resume"
+                _hover={{ color: 'teal.300' }}
+                _activeLink={{ color: 'white' }}
+                fontWeight='bold'
+                fontSize='lg'
+                style={{ color: 'white', fontSize }}
+              >
                 Resume
-              </a>
+              </Link>
             </ListItem>
           </List>
         </Flex>
