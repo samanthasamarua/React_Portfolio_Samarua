@@ -2,6 +2,7 @@ import React from 'react';
 import { Flex, Box, Heading } from '@chakra-ui/react';
 import Project from '../components/Project'; // Assuming you have a Project component
 
+
 const Portfolio = () => {
   // Define an array of project data containing title, image source, app link, and repo link
   const projects = [

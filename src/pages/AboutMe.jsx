@@ -1,11 +1,12 @@
 import React from 'react';
 import { Box, Flex, Heading, Text, Image } from '@chakra-ui/react';
+import profilepic from '../assets/Samantha.png'
 
 const AboutMe = () => {
   return (
     <Flex className="about-section" direction={{ base: 'column', md: 'row' }} align="center" justify="center" bg="#F3F4F6" py={8} px={4} borderRadius="lg">
       <Box maxW={{ base: '100%', md: '30%' }} mb={{ base: 4, md: 0 }}>
-        <Image src="./src/assets/Samantha.png" alt="Profile" borderRadius="full" />
+        <Image src={profilepic} alt="Profile" borderRadius="full" />
       </Box>
       <Box maxW={{ base: '100%', md: '60%' }} pl={{ base: 0, md: 8 }}>
         <Heading as="h2" fontSize={{ base: '2xl', md: '4xl' }} fontFamily="Agbalumo" fontWeight="bold" mb={4}>ABOUT ME</Heading> 
