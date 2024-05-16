@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Heading, Text } from '@chakra-ui/react';
+import { Box, Heading, Text, Link } from '@chakra-ui/react';
 
 const Resume = () => {
   return (
@@ -7,6 +7,9 @@ const Resume = () => {
       <Box textAlign="center" mb={8} bg="#F3F4F6">
       <Heading as="h2" fontSize="50px" fontFamily="Agbalumo" fontWeight="bold" mb={4}>Resume</Heading>
         <Text fontSize="lg">Explore my skills and experience.</Text>
+        <Link  href="/CV_SSamarua.pdf" download fontWeight="bold">
+          Download Resume
+        </Link>
       </Box>
       
       <Box bg="#F3F4F6" borderWidth="1px" borderRadius="lg" overflow="hidden" p={4} boxShadow="md" mb={8}>
@@ -38,7 +41,7 @@ const Resume = () => {
 
       <Box bg="#F3F4F6" borderWidth="1px" borderRadius="lg" overflow="hidden" p={4} boxShadow="md">
         <Heading as="h2" size="lg" mb={4} textAlign="center">Backend Experience</Heading>
-        <ul>
+        <ul style={{ listStyleType: "none", padding: 0, margin: 0 }}>
           <li>
             <Text textAlign="center">APIs</Text>
           </li>
