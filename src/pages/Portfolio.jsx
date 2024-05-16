@@ -14,37 +14,37 @@ const Portfolio = () => {
   const projects = [
     {
       title: 'Personal Portfolio',
-      imageSrc: {PersonalPortfolio},
+      imageSrc: PersonalPortfolio,
       appLink: 'https://samanthasamarua.github.io/Samantha-Samarua/',
       repoLink: 'https://github.com/samanthasamarua/Samantha-Samarua'
     },
     {
       title: 'Password Generator',
-      imageSrc: {PasswordGenerator},
+      imageSrc: PasswordGenerator,
       appLink: 'https://samanthasamarua.github.io/Password-Generator/',
       repoLink: 'https://github.com/samanthasamarua/Password-Generator'
     },
     {
         title: 'Work Day Scheduler',
-        imageSrc: {WorkScheduler},
+        imageSrc: WorkScheduler,
         appLink: 'https://samanthasamarua.github.io/Online-WorkDay_Scheduler/',
         repoLink: 'https://github.com/samanthasamarua/Online-WorkDay_Scheduler?tab=readme-ov-file'
       },
       {
         title: 'Weather Dashboard',
-        imageSrc: {WeatherDashboard},
+        imageSrc: WeatherDashboard,
         appLink: 'https://samanthasamarua.github.io/Weather-Dashboard/',
         repoLink: 'https://github.com/samanthasamarua/Weather-Dashboard'
       },
       {
         title: 'Express.js Note Taker',
-        imageSrc: {NoteTaker},
+        imageSrc: NoteTaker,
         appLink: 'https://express-js-notetaker-ss-f712381bee8f.herokuapp.com/',
         repoLink: 'https://github.com/samanthasamarua/Express.js_Note_Taker'
       },
       {
         title: 'PWA Text Editor',
-        imageSrc: {TextEditor},
+        imageSrc: TextEditor,
         appLink: 'https://pwa-text-editor-challenge-19.onrender.com/',
         repoLink: 'https://github.com/samanthasamarua/PWA-Text_Editor'
       },
