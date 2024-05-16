@@ -10,7 +10,7 @@ import TextEditor from '../assets/PWA_Text_Editor.png';
 
 
 const Portfolio = () => {
-  // Define an array of project data containing title, image source, app link, and repo link
+  
   const projects = [
     {
       title: 'Personal Portfolio',
@@ -64,7 +64,7 @@ const Portfolio = () => {
             borderRadius="lg"
             overflow="hidden"
             boxShadow="md"
-            _hover={{ bg: 'lightBlue' }} // Change background color on hover
+            _hover={{ bg: 'lightBlue' }} 
           >
             <Project
               title={project.title}

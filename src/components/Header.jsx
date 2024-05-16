@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const fontSize = useBreakpointValue({ base: '1rem', md: '1.3rem' }); // Adjust font size based on breakpoint
+  const fontSize = useBreakpointValue({ base: '1rem', md: '1.3rem' }); 
 
   return (
     <div className="navbar-container" style={{ backgroundColor: '#3A3840' }}>
@@ -20,13 +20,13 @@ const Header = () => {
           <List display={{ base: 'none', md: 'flex' }} alignItems="center">
             <ListItem marginRight="8">
               <Link
-                as={RouterLink} // Use RouterLink as the rendered component
-                to="/AboutMe" // Specify the route path
+                as={RouterLink}
+                to="/AboutMe" 
                 _hover={{ color: 'teal.300' }}
                 _activeLink={{ color: 'white' }}
                 fontWeight='bold'
                 fontSize='lg'
-                style={{ color: 'white', fontSize }} // Apply styles
+                style={{ color: 'white', fontSize }} 
               >
                 About Me
               </Link>
@@ -74,12 +74,12 @@ const Header = () => {
 
           {/* Hamburger menu icon for mobile */}
           <IconButton 
-            icon={<GiHamburgerMenu size="1.5em" />} // Adjust size here
+            icon={<GiHamburgerMenu size="1.5em" />} 
             variant="ghost" 
-            color="white" // Set the color to white
+            color="white" 
             aria-label="Menu"
             onClick={onOpen}
-            display={{ base: 'block', md: 'none' }} // Show on small screens
+            display={{ base: 'block', md: 'none' }} 
           />
         </Flex>
       </Flex>

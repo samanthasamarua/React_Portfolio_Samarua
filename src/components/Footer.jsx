@@ -12,7 +12,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            fontSize="50px" // Increased icon size
+            fontSize="50px" 
             mr={15}
           >
             <FaGithub />
@@ -22,7 +22,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            fontSize="50px" // Increased icon size
+            fontSize="50px" 
             mr={15}
           >
             <FaLinkedin />

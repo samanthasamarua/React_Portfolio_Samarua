@@ -18,9 +18,8 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you can add the logic to submit the form data
     console.log(formData);
-    // Reset the form fields after submission
+    
     setFormData({
       name: '',
       email: '',
@@ -30,7 +29,7 @@ const Contact = () => {
 
   return (
     <VStack spacing={8} align="center" bg="#F3F4F6" p={8}>
-      <Box bg="#F3F4F6" p={20} borderRadius="lg" boxShadow="lg" maxW="xl" > {/* Adjusted max width */}
+      <Box bg="#F3F4F6" p={20} borderRadius="lg" boxShadow="lg" maxW="xl" >
       <Heading as="h2" fontSize="50px" fontFamily="Agbalumo" fontWeight="bold" mb={4}>Contact Me</Heading>
         <form onSubmit={handleSubmit}>
           <FormControl id="name" isRequired>
