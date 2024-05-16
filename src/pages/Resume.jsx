@@ -11,7 +11,7 @@ const Resume = () => {
       
       <Box bg="#F3F4F6" borderWidth="1px" borderRadius="lg" overflow="hidden" p={4} boxShadow="md" mb={8}>
         <Heading as="h2" size="lg" mb={4} textAlign="center">Frontend Experience</Heading>
-        <ul>
+        <ul style={{ listStyleType: "none", padding: 0, margin: 0 }}>
           <li>
             <Text textAlign="center">HTML</Text>
           </li>
