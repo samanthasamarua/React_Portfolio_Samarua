@@ -48,7 +48,7 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 <img src="./src/assets/Resume.png">
 
 # Deployment Link
-
+https://reactportfoliosamanthasamarua.netlify.app/portfolio
 
 # Github Link
 https://github.com/samanthasamarua/React_Portfolio_Samarua
