@@ -7,37 +7,37 @@ const Portfolio = () => {
   const projects = [
     {
       title: 'Personal Portfolio',
-      imageSrc: '../assets/Personal_Portfolio.png',
+      imageSrc: './src/assets/Personal_Portfolio.png',
       appLink: 'https://samanthasamarua.github.io/Samantha-Samarua/',
       repoLink: 'https://github.com/samanthasamarua/Samantha-Samarua'
     },
     {
       title: 'Password Generator',
-      imageSrc: '../assets/Password_Generator.png',
+      imageSrc: './src/assets/Password_Generator.png',
       appLink: 'https://samanthasamarua.github.io/Password-Generator/',
       repoLink: 'https://github.com/samanthasamarua/Password-Generator'
     },
     {
         title: 'Work Day Scheduler',
-        imageSrc: '../assets/Work_Day_Scheduler.png',
+        imageSrc: './src/assets/Work_Day_Scheduler.png',
         appLink: 'https://samanthasamarua.github.io/Online-WorkDay_Scheduler/',
         repoLink: 'https://github.com/samanthasamarua/Online-WorkDay_Scheduler?tab=readme-ov-file'
       },
       {
         title: 'Weather Dashboard',
-        imageSrc: '../assets/Weather_Dashboard.png',
+        imageSrc: './src/assets/Weather_Dashboard.png',
         appLink: 'https://samanthasamarua.github.io/Weather-Dashboard/',
         repoLink: 'https://github.com/samanthasamarua/Weather-Dashboard'
       },
       {
         title: 'Express.js Note Taker',
-        imageSrc: '../assets/ExpressJS_NoteTaker.png',
+        imageSrc: './src/assets/ExpressJS_NoteTaker.png',
         appLink: 'https://express-js-notetaker-ss-f712381bee8f.herokuapp.com/',
         repoLink: 'https://github.com/samanthasamarua/Express.js_Note_Taker'
       },
       {
         title: 'PWA Text Editor',
-        imageSrc: '../assets/PWA_Text_Editor.png',
+        imageSrc: './src/assets/PWA_Text_Editor.png',
         appLink: 'https://pwa-text-editor-challenge-19.onrender.com/',
         repoLink: 'https://github.com/samanthasamarua/PWA-Text_Editor'
       },

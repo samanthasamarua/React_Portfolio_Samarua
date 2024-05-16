@@ -36,7 +36,7 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 # Screenshot
 
 # About Me Page
-<img src="./src/assets/AboutMe.png>
+<img src="./src/assets/AboutMe.png">
 
 # Contact Me Page
 <img src="./src/assets/ContactMe.png">
