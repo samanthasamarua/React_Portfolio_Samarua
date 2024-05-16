@@ -1,6 +1,12 @@
 import React from 'react';
 import { Flex, Box, Heading } from '@chakra-ui/react';
-import Project from '../components/Project'; // Assuming you have a Project component
+import Project from '../components/Project'; 
+import PersonalPortfolio from '../assets/Personal_Portfolio.png';
+import PasswordGenerator from '../assets/Password_Generator.png';
+import WorkScheduler from '../assets/Work_Day_Scheduler.png';
+import WeatherDashboard from '../assets/Weather_Dashboard.png';
+import NoteTaker from '../assets/ExpressJS_NoteTaker.png';
+import TextEditor from '../assets/PWA_Text_Editor.png';
 
 
 const Portfolio = () => {
@@ -8,37 +14,37 @@ const Portfolio = () => {
   const projects = [
     {
       title: 'Personal Portfolio',
-      imageSrc: './src/assets/Personal_Portfolio.png',
+      imageSrc: {PersonalPortfolio},
       appLink: 'https://samanthasamarua.github.io/Samantha-Samarua/',
       repoLink: 'https://github.com/samanthasamarua/Samantha-Samarua'
     },
     {
       title: 'Password Generator',
-      imageSrc: './src/assets/Password_Generator.png',
+      imageSrc: {PasswordGenerator},
       appLink: 'https://samanthasamarua.github.io/Password-Generator/',
       repoLink: 'https://github.com/samanthasamarua/Password-Generator'
     },
     {
         title: 'Work Day Scheduler',
-        imageSrc: './src/assets/Work_Day_Scheduler.png',
+        imageSrc: {WorkScheduler},
         appLink: 'https://samanthasamarua.github.io/Online-WorkDay_Scheduler/',
         repoLink: 'https://github.com/samanthasamarua/Online-WorkDay_Scheduler?tab=readme-ov-file'
       },
       {
         title: 'Weather Dashboard',
-        imageSrc: './src/assets/Weather_Dashboard.png',
+        imageSrc: {WeatherDashboard},
         appLink: 'https://samanthasamarua.github.io/Weather-Dashboard/',
         repoLink: 'https://github.com/samanthasamarua/Weather-Dashboard'
       },
       {
         title: 'Express.js Note Taker',
-        imageSrc: './src/assets/ExpressJS_NoteTaker.png',
+        imageSrc: {NoteTaker},
         appLink: 'https://express-js-notetaker-ss-f712381bee8f.herokuapp.com/',
         repoLink: 'https://github.com/samanthasamarua/Express.js_Note_Taker'
       },
       {
         title: 'PWA Text Editor',
-        imageSrc: './src/assets/PWA_Text_Editor.png',
+        imageSrc: {TextEditor},
         appLink: 'https://pwa-text-editor-challenge-19.onrender.com/',
         repoLink: 'https://github.com/samanthasamarua/PWA-Text_Editor'
       },
